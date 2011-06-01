@@ -1,6 +1,6 @@
 Hi
 
-This adds a system wide action and/or shortcut to your Mac OS X installation to copy the current selected text of any application to iA Writer.[^1]
+This is adds a simple system wide action and/or shortcut to your Mac OS X installation to copy the current selected text of any application in iA Writer.[^1]
 
 # Installation Instructions
 
