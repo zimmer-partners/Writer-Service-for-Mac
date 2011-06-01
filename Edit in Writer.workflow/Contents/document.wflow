@@ -47,7 +47,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>on run {input, parameters}		tell application "System Events" to set isUIScriptingEnabled to UI elements enabled		if isUIScriptingEnabled = false then		display dialog "This service utilizes the GUI Scripting architecture of Mac OS X. Tick \"Enable access for assistive devices\" in the Universal Access preference pane." with icon 1 buttons {"Cancel"} default button 1		return	end if		tell application "System Events"		set frontProcess to item 1 of (processes whose frontmost is true)		tell frontProcess			if menu item "Select All" of menu 1 of menu bar item "Edit" of menu bar 1 exists then				click menu item "Select All" of menu 1 of menu bar item "Edit" of menu bar 1			else if menu item "All" of menu 1 of menu item "Select" of menu 1 of menu bar item "Edit" of menu bar 1 exists then				click menu item "All" of menu 1 of menu item "Select" of menu 1 of menu bar item "Edit" of menu bar 1			else				return			end if		end tell	end tell		tell application "iA Writer"		activate	end tell		tell application "System Events"		set frontProcess to item 1 of (processes whose frontmost is true)		tell frontProcess			click menu item "New" of menu 1 of menu bar item "File" of menu bar 1			click menu item "Paste" of menu 1 of menu bar item "Edit" of menu bar 1		end tell	end tell	end run</string>
+					<string>on run {input, parameters}		tell application "System Events"		set frontProcess to item 1 of (processes whose frontmost is true)		set isUIScriptingEnabled to UI elements enabled	end tell		if isUIScriptingEnabled = false then		display dialog "This service utilizes the GUI Scripting architecture of Mac OS X. Tick \"Enable access for assistive devices\" in the Universal Access preference pane." with icon 1 buttons {"Cancel"} default button 1		return	end if		tell application "System Events"		set frontProcess to item 1 of (processes whose frontmost is true)		tell frontProcess			try				click menu item "Select All" of menu 1 of menu bar item "Edit" of menu bar 1			on error				try					click menu item "All" of menu 1 of menu item "Select" of menu 1 of menu bar item "Edit" of menu bar 1				on error					return				end try			end try			try				click menu item "Copy" of menu 1 of menu bar item "Edit" of menu bar 1			on error				return			end try		end tell	end tell		tell application "iA Writer"		activate	end tell		tell application "System Events"		set writerProcess to item 1 of (processes whose name is "iA Writer")		tell writerProcess			click menu item "New" of menu 1 of menu bar item "File" of menu bar 1			click menu item "Paste" of menu 1 of menu bar item "Edit" of menu bar 1		end tell	end tell	end run</string>
 				</dict>
 				<key>Application</key>
 				<array>
@@ -183,7 +183,7 @@ end run</string>
 			</array>
 		</dict>
 		<key>windowFrame</key>
-		<string>{{374, 85}, {1270, 1083}}</string>
+		<string>{{416, 95}, {1270, 1083}}</string>
 		<key>workflowViewScrollPosition</key>
 		<string>{{0, 0}, {889, 815}}</string>
 	</dict>

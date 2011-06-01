@@ -1,6 +1,6 @@
 Hi
 
-This is a simple system wide service to add a global "Edit in Writer" action and/or shortcut to your Mac OS X installation. To install:
+This is a simple system wide service to add a global "Edit in Writer" action and/or shortcut to your Mac OS X installation. Unfortunately this seams only to work if Writer is not in full screen mode. To install:
 
 1. Copy "Edit in Writer.workflow" to "~/Library/Services".
 2. Make sure "Enable access for assistive devices" in the Universal Access preference pane is ticked.
