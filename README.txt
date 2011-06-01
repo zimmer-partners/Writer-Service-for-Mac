@@ -1,29 +1,30 @@
 Hi
 
-These are two simple system wide services to add global actions and/or shortcuts to your Mac OS X installation to edit the current text from any application in iA Writer.
-
-* Both actions __do not__ work if Writer is __in full screen mode.__ 
-* The "Edit Selection in Writer" only works, if some text is selected, but is faster and __much more insensitive__ to the source application's capabilities.
+This adds a system wide action and/or shortcut to your Mac OS X installation to copy the current selected text of any application to iA Writer.[^1]
 
 # Installation Instructions
 
-1. Copy "Edit in Writer.workflow" and/or "Edit Selection in Writer.workflow" to "~/Library/Services".
+1. Copy "Edit Selection in Writer.workflow" to "~/Library/Services".
 2. Make sure "Enable access for assistive devices" in the Universal Access preference pane is ticked.
 
-There's now a "Edit in Writer" and/or "Edit Selection in Writer" command in the "Services" menu of every app. To define a shortcut for that: 
+There's now a "Edit Selection in Writer" command in the "Services" menu of every app. To define a shortcut for that: 
 
-1. Click on any app's menu (let's say "Finder" right to the Apple).
+1. Click on any app's menu[^2].
 2. Choose "Service Preferences..." from the "Services" Menu.
-3. Scroll to the section "General" and/or "Text" in the right pane.
-4. Double click on the right side of the "Edit in Writer" or "Edit Selection in Writer" entry.
-5. Hit the shortcut you want use. (cmd-alt-E works just fine for most apps.)
-6. Close "System Preferences".
-7. Check the menu "Services" again to verify the shortcuts. (This seams to be necessary to reload menu shortcuts.)
+3. Scroll to the section "Text" in the right pane.
+4. Double click the right side of "Edit Selection in Writer".
+5. Hit the shortcut[^3] you want use.
+6. Close the "System Preferences" window.
+7. Check the menu "Services" again to verify the shortcut.[^4] 
 
 Enjoy.
 
 Cheers,
 Moritz
 
+[^1]: It does not copy the text back though.
+[^2]: Let's say "Finder" just right to the Apple-Menu.
+[^3]: Cmd-Shift-Alt-E works just fine for most apps.
+[^4]: This seams to be necessary to reload menu shortcuts.
 
 -- Moritz Zimmer -- Konzept & Code -- moritzz.com -- twitter.com/moritzz --
