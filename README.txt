@@ -20,6 +20,6 @@ Enjoy.
 Cheers,
 Moritz
 
-P.S. You can easily adjust the key sequence the service runs by double clicking the "Edit in Writer.workflow".
+P.S. I lately changed the method how the source app and Writer itself are remote conrolled from keystrokes to directly triggering their menu items. This makes the service much more slower and the corresponding menu items must be available in the source app, but much more stable.
 
 -- Moritz Zimmer -- Konzept & Code -- moritzz.com -- twitter.com/moritzz --
