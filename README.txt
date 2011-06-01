@@ -7,12 +7,13 @@ This is a simple system wide service to add a global "Edit in Writer" action and
 
 There's now a "Edit in Writer" command in the "Services" menu in every app's menu. To define a shortcut for that: 
 
-1. Open the Keyboard preference pane.
-2. Switch to the "Keyboard Shortcuts" tab.
-3. Choose "Services" in the left pane.
-4. Scroll down to the section "General" in the right pane.
-5. Double click on the right side of the "Edit in Writer" entry.
-6. Hit the shortcut you want use. (cmd-alt-E works just fine for most apps.)
+1. Click on any app's menu (let's say "Finder" right to the Apple).
+2. Choose "Service Preferences..." from the "Services" Menu.
+3. Scroll down to the section "General" in the right pane.
+4. Double click on the right side of the "Edit in Writer" entry.
+5. Hit the shortcut you want use. (cmd-alt-E works just fine for most apps.)
+6. Close "System Preferences".
+7. Check the menu "Services" again to verify the shortcut. (This seams to be necessary to reload menu shortcuts.)
 
 Enjoy.
 
