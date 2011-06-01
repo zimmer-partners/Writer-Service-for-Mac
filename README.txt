@@ -4,7 +4,7 @@ These are two simple system wide services to add global actions and/or shortcuts
 
 * Both actions __do not__ work if Writer is __in full screen mode.__ 
 
-* The "Edit Selection in Writer" only works, if some text is selected, but is __much more insensitive__ to the source application's capabilities.
+* The "Edit Selection in Writer" only works, if some text is selected, but is faster and __much more insensitive__ to the source application's capabilities.
 
 # Installation Instructions
 
