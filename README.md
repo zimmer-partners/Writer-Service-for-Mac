@@ -1,13 +1,22 @@
-Hi
+# iAWriter Service
+
+Hi.
 
 This adds a simple system wide action and/or shortcut[^1] to your Mac OS X installation to copy the current selected text of any application to iA Writer.[^2]
 
-# Installation Instructions
+## Installation Instructions
 
-1. Copy "Edit Selection in Writer.workflow" to "~/Library/Services".
+### Automatic
+
+1. Clone the repository
+2. run `$ sh install.sh`
+
+### Manual
+
+1. Copy `Edit Selection in Writer.workflow` to `~/Library/Services`.
 2. Make sure "Enable access for assistive devices" in the Universal Access preference pane is ticked.
 
-There's now a "Edit Selection in Writer" command in the "Services" menu of every app. To define a shortcut for that: 
+There's now a "Edit Selection in Writer" command in the "Services" menu of every app. To define a shortcut for that:
 
 1. Click on any app's menu[^3].
 2. Choose "Service Preferences..." from the "Services" Menu.
@@ -15,7 +24,7 @@ There's now a "Edit Selection in Writer" command in the "Services" menu of every
 4. Double click the right side of "Edit Selection in Writer".
 5. Hit the shortcut[^4] you want use.
 6. Close the "System Preferences" window.
-7. Check the menu "Services" again to verify the shortcut.[^5] 
+7. Check the menu "Services" again to verify the shortcut.[^5]
 
 Enjoy.
 
