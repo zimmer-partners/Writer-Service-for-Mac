@@ -22,7 +22,7 @@ Enjoy.
 Cheers,
 Moritz
 
-[^1]: It works onyl when Writer is _not in fullscreen mode_.
+[^1]: It works only when Writer is _not in fullscreen mode_.
 [^2]: It does not copy the text back though.
 [^3]: Let's say "Finder" just right to the Apple-Menu.
 [^4]: Cmd-Shift-Alt-E works just fine for most apps.
